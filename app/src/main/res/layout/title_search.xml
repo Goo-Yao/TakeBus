@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@color/titleBackgroundColor"
+    android:elevation="1dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ic_search_24dp" />
+
+    <View
+        android:layout_width="0.1dip"
+        android:layout_height="22dip"
+        android:layout_marginLeft="6dp"
+        android:background="@color/dividerColor" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6.8"
+        android:background="@drawable/edittext"
+        android:lines="1"
+        android:singleLine="true"
+        android:textColorHint="#cccccc"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:text="取消"
+        android:textColor="@color/textSecondaryColor"
+        android:textSize="16sp" />
+
+</LinearLayout>

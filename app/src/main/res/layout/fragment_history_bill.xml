@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standardColorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_date3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="3月20号"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_date3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="广工站到中环东路"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_ticket3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_date3"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_ticket" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_ticket3"
+            android:layout_alignLeft="@id/tv_date3"
+            android:text="已使用"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/dividerColor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="4月3号"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_date"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="中环东路站到中心南大街站"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_ticket"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_date"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_ticket" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_ticket"
+            android:layout_alignLeft="@id/tv_date"
+            android:text="已使用"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/dividerColor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="4月30号"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_date1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="广美站到综合商业南街"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_ticket1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/tv_date1"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_ticket" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_ticket1"
+            android:layout_alignLeft="@id/tv_date1"
+            android:text="已使用"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/dividerColor" />
+
+
+</LinearLayout>

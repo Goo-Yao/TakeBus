@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">我爱搭公交</string>
+    <string name="tag_view">View</string>
+    <string name="tag_click">Click</string>
+</resources>

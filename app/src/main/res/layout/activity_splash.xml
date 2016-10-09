@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standardColorWhite"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/newlogo"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/ivSub"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/ivBus"
+        android:layout_below="@+id/ivLogo"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/btn_subway" />
+
+    <ImageView
+        android:id="@+id/ivBus"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/ivSub"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/btn_bus" />
+
+</RelativeLayout>

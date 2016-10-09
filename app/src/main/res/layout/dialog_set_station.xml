@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/shape_circle_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_start_station"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_background"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:text="设为起点站"
+        android:textColor="@color/startStationGreenColor"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/dividerColor" />
+
+    <TextView
+        android:id="@+id/tv_terminal_station"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_click_background"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:text="设为终点站"
+        android:textColor="@color/terminalStationRedColor"
+        android:textSize="18dp" />
+
+</LinearLayout>

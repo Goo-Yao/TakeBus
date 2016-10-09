@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standardColorWhite">
+
+    <RelativeLayout
+        android:id="@+id/rl_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@drawable/bg_click"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="铃声"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tag"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <ImageView
+            android:id="@+id/img_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/tv_alarm"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/dividerColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_shock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_alarm"
+        android:background="@drawable/bg_click"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_shock_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="振动提醒"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_shock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_shock_tag"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img__shock_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_shock"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_arrow_drop_down_black_18dp" />
+
+        <ImageView
+            android:id="@+id/img__shock_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/tv_shock"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/dividerColor" />
+    </RelativeLayout>
+</RelativeLayout>

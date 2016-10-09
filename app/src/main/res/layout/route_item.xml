@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_click_background"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="中环西路"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:src="@drawable/close_3_2_px" />
+
+</RelativeLayout>

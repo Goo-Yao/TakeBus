@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_route"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standardColorWhite">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_route_station" />
+
+    <LinearLayout
+        android:id="@+id/ll_station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:background="@color/standardColorWhite"
+        android:orientation="horizontal"></LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_station"
+        android:background="@color/standardColorWhite"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

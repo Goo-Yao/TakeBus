@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@color/titleBackgroundColor"
+    android:elevation="1dp">
+
+    <ImageView
+        android:id="@+id/iv_ctrl_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_nav_menu_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_bus_24dp"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:text="公交车"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+</RelativeLayout>

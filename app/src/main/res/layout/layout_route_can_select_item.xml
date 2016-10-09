@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_click"
+    android:orientation="vertical"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_route_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:textColor="@color/textPrimaryColor"
+        android:textSize="16sp"
+        tools:text="大学城环线1路" />
+
+    <TextView
+        android:id="@+id/tv_route_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        tools:text="距离6.2公里 | 途径18站" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dividerColor" />
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_station_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/img_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle_line_3_2px" />
+
+        <ImageView
+            android:id="@+id/img_station"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_brightness_1_cyan_400_18dp" />
+
+        <ImageView
+            android:id="@+id/img_bus_top"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-12dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_bus_green_24dp"
+             />
+
+        <RelativeLayout
+            android:id="@+id/rl_bus_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+          >
+
+            <ImageView
+                android:id="@+id/img_bus_bottom"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-12dp"
+                android:src="@drawable/ic_bus_green_24dp" />
+
+            <ImageView
+                android:id="@+id/gap"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rl_station_item"
+        android:background="@drawable/bg_click"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="中环西路"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_nearest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_station"
+            android:text="(离我最近)"
+            android:textColor="@color/startStationGreenColor"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:background="@color/dividerColor" />
+    </RelativeLayout>
+</RelativeLayout>
+

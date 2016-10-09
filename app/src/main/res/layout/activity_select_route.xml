@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/route_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/titleBackgroundColor"
+        android:elevation="1dp">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_arrow_back_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择线路"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/ll_select_station"
+        layout="@layout/layout_select_station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/route_detail_title"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_select_station"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bg_circular_layout">
+
+        <TextView
+            android:id="@+id/tv_route_can_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:text="可选线路"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_route_result"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="请先设置起点、终点站"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_route"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_route_can_select"
+            android:layout_marginTop="3dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

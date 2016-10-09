@@ -1,0 +1,4 @@
+<resources>
+    <item name="view_tag_one" type="id" />
+    <item name="view_tag_two" type="id" />
+</resources>

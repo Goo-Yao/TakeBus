@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/route_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/titleBackgroundColor"
+        android:elevation="1dp">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_arrow_back_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="线路详情"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <com.rdc.takebus.view.CustomView.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/route_detail_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_circular_layout">
+
+            <LinearLayout
+                android:id="@+id/ll_route_station"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/tv_start_station"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="18sp"
+                    tools:text="中心西路" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="-->"
+                    android:textColor="@color/startStationGreenColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_end_station"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="18sp"
+                    tools:text="中心西路" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_route_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_route_station"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="16sp"
+                    android:text="天气：阴天，有降雨可能，建议备伞" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:text="人流量：运载压力低，请放心搭乘" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:text="路况：无拥堵路段，路线畅通" />
+                <TextView
+                    android:id="@+id/tv_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    tools:text="预计用时：" />
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="16sp"
+                    tools:text="总路程：" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_route_station"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/ll_route_detail"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:background="@color/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_route_station"
+                android:layout_margin="3dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="公交购票"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="智能规划"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.rdc.takebus.view.CustomView.CustomScrollView>
+
+</RelativeLayout>

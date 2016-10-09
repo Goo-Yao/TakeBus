@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/standardColorWhite"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/tv_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textSecondaryColor"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_station"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:drawableLeft="@drawable/ic_station_start"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textSecondaryColor" />
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:drawableLeft="@drawable/ic_station_terminal"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textSecondaryColor" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/ll_time"
+        android:layout_marginTop="10dp"
+        android:background="@color/dividerColor" />
+</RelativeLayout>

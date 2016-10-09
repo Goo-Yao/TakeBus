@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_search" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:text="请输入站点信息"
+        android:textColor="@color/textSecondaryColor"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_station"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:visibility="gone" />
+</LinearLayout>

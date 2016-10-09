@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alarm_background">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="11:23"
+        android:textColor="@color/standardColorWhite"
+        android:textSize="70dp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_centerHorizontal="true"
+        android:text="5月23日 周一"
+        android:textColor="#e6e6e6"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_alarm_white_24dp"
+        android:gravity="center_vertical"
+        android:text="已到达中环西路"
+        android:textColor="@color/standardColorWhite"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tv_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="滑动停止闹钟"
+        android:textColor="@color/standardColorWhite"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/img_white"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/tv_notify"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_expand_less_white_24dp" />
+
+    <ImageView
+        android:id="@+id/img_gray"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/img_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-25dp"
+        android:src="@drawable/ic_expand_less_gray_24dp" />
+</RelativeLayout>

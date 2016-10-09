@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_select_station"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/route_detail_title"
+    android:background="@drawable/bg_circular_layout"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_select_start_station"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_click"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/greencircle32px" />
+
+        <TextView
+            android:id="@+id/tv_startStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="起点站"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/ll_select_start_station"
+        android:layout_marginBottom="5dip"
+        android:layout_marginEnd="10dip"
+        android:layout_marginStart="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/dividerColor" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_terminal_station"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_click"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/icon_pinkcircle" />
+
+        <TextView
+            android:id="@+id/tv_terminalStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="终点站"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

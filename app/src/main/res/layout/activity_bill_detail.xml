@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/standardColorWhite"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/layout_bill_detail_bar"
+        layout="@layout/title_login" />
+
+    <LinearLayout
+        android:id="@+id/ll_bill_detail_station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/tv_bill_detail_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广工"
+            android:textColor="@color/standardColorBlack"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="-->"
+            android:textColor="@color/startStationGreenColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_bill_detail_terminal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="华师"
+            android:textColor="@color/standardColorBlack"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bill_detail_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="线路：二号线"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_bill_detail_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="票价：2 RMB"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_bill_detail_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bill_detail_cost"
+        android:gravity="center"
+        android:text="支付时间：2016-16-16"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/standardColorWhite">
+
+            <ImageView
+                android:id="@+id/iv_bill_detail_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
