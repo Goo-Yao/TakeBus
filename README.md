@@ -1,6 +1,7 @@
 # 我爱搭公交App（项目重构提升中）
 ## App截图
 ![智能出行](http://odzvmv4ab.bkt.clouddn.com/%E6%99%BA%E8%83%BD%E5%87%BA%E8%A1%8C.gif)
+
 ![快捷支付](http://odzvmv4ab.bkt.clouddn.com/%E5%BF%AB%E6%8D%B7%E6%94%AF%E4%BB%98.gif)
 
 ## 概述
