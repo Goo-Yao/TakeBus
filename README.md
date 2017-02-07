@@ -1,2 +1,2 @@
-# 我爱搭公交App（项目重构提升，已迁移至![BusToGo](https://github.com/Goo-Yao/BusToGo)）
+# 我爱搭公交App（项目重构提升，已迁移至[BusToGo](https://github.com/Goo-Yao/BusToGo)）
 原版本由4位比赛小组共同开发两周而成，当时大家代码尚处于粗糙阶段，大家多多包涵，另外，我个人也会在学习之余着手将本项目重构提升，敬请关注~
